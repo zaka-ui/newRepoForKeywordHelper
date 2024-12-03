@@ -145,16 +145,12 @@ const fetchKeywordsTextArea = async () => {
         
         if (response.status === 200) {
           const datas = response.data.tasks[0].result[0].items;
-          console.log(datas);
-          
           for (const data of datas) {
             const { keyword, search_volume } = data;
             const existingData = resultsMap.get(keyword) || {};
             resultsMap.set(keyword, { ...existingData, keyword, search_volume });
           }
           //console.log("After search volume:", Array.from(results.entries()));
-          
-          
         }
         else{
           console.log("Somthing went wrong in API");

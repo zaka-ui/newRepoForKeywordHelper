@@ -39,7 +39,7 @@ const SuggestionsList = ({ suggestions }) => {
                 ({suggestion?.searches}/mo)
               </span>
               <span className="text-xs text-gray-500">
-                ({suggestion?.competition} KD)
+                ({suggestion?.competition > 40 ? "trés concurentiel" : suggestion.competition > 20 ? "concurentiel" : "non concurentiel"} {suggestion?.competition} KD)
               </span>
             </div>
           </li>
