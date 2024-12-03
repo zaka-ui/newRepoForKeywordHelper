@@ -21,10 +21,10 @@ import Loading from "../../../components/loading";
 const calculateTotalKeywords = (results) => results?.length || 0;
 
 const determineLevel = (totalKeywords) => {
-  if (totalKeywords < 30) return { name: "Level 1", color: "text-emerald-400" };
-  if (totalKeywords < 80) return { name: "Level 2", color: "text-blue-400" };
-  if (totalKeywords < 180) return { name: "Level 3", color: "text-purple-400" };
-  return { name: "VIP", color: "text-amber-400" };
+  if (totalKeywords < 30) return { name: "niveau 1", color: "text-emerald-400" };
+  if (totalKeywords < 80) return { name: "niveau 2", color: "text-blue-400" };
+  if (totalKeywords < 180) return { name: "niveau 3", color: "text-purple-400" };
+  return { name: "niveau VIP", color: "text-amber-400" };
 };
 
 const saveResultsToDataBase = async(user ,project , results) => { 
