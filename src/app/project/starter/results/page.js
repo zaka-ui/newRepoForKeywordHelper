@@ -128,7 +128,7 @@ const Header = ({ onBack , goHistory}) => (
       className="flex items-center px-4 py-2 rounded-lg bg-blue-600/20 border border-blue-500/30
                text-blue-400 hover:bg-blue-600/30 transition-all duration-200"
     >
-      Aller à l'historique
+      Aller à l historique
     </button>
     </div>
     <h1 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r 
@@ -143,13 +143,13 @@ const BusinessInfo = ({ name }) => (
                 shadow-lg space-y-4">
     <h2 className="text-xl font-semibold text-transparent bg-clip-text 
                  bg-gradient-to-r from-blue-400 to-purple-500">
-      Informations sur l'entreprise
+      Informations sur l entreprise
     </h2>
     <div className="space-y-3">
       <div className="flex items-center space-x-3 text-gray-300">
         <Building2 className="h-5 w-5 text-blue-400" />
         <p>
-          <span className="text-gray-400">Nom de l'entreprise:</span>{' '}
+          <span className="text-gray-400">Nom de l entreprise:</span>{' '}
           {name || 'N/A'}
         </p>
       </div>
