@@ -225,8 +225,6 @@ const ActionButtons = ({ analyzeKeywords, onDownload, onSave, disabled , save })
 export default function Results() {
   const [loader , setLoader] = useState(false)
   const { user,setProject, project , setResults, results, name,setAiResponse ,save ,setSave} = useContext(ResultsContext); 
-  console.log(results);
-  
   const [showModal, setShowModal] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
   const [showErrorMessage, setShowErrorMessage] = useState(false);

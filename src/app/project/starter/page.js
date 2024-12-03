@@ -142,9 +142,11 @@ const fetchKeywordsTextArea = async () => {
           data: post_array,
           headers: { 'content-type': 'application/json' },
         });
-
+        
         if (response.status === 200) {
           const datas = response.data.tasks[0].result[0].items;
+          console.log(datas);
+          
           for (const data of datas) {
             const { keyword, search_volume } = data;
             const existingData = resultsMap.get(keyword) || {};
