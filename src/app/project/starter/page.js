@@ -23,6 +23,8 @@ export default function Starter() {
   const [keywords, setKeywords] = useState([""]);
   const [loading, setLoading] = useState(false);
   const { user , project, setProject, setResults,name, setName , locations } = useContext(ResultsContext);
+  console.log(project);
+  
   const [inputMethod, setInputMethod] = useState("keywords");
   const [showModal, setShowModal] = useState(false);
   const [modalMessage, setModalMessage] = useState("");
@@ -422,7 +424,7 @@ router.push('/project/starter/results');
               <input
                 type="text"
                 placeholder="Domain name"
-                value={name}
+                value={project?.name || name || project?.data?.name}
                 onChange={(e) => {
                   setName(e.target.value)
                   
