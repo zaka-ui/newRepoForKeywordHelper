@@ -423,7 +423,7 @@ router.push('/project/starter/results');
             <Building2 className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 group-focus-within:text-blue-400 transition-colors z-10" />
               <input
                 type="text"
-                placeholder="Domain name"
+                placeholder="URL du site"
                 value={project?.name || name || project?.data?.name}
                 onChange={(e) => {
                   setName(e.target.value)
