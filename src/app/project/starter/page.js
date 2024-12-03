@@ -449,7 +449,7 @@ router.push('/project/starter/results');
                              ? 'bg-blue-600 border-blue-500 text-white h-10 flex items-center' 
                              : 'bg-gray-800/50 border-gray-700 text-gray-400 hover:bg-gray-700/50 h-10 flex items-center'}`}
               >
-                {method === 'keywords' ? 'Saisie de mot-clé' : 'Saisie par lot'}
+                {method === 'keywords' ? 'Saisie de mot-clé' : 'Saisie mot clé plus localité'}
               </button>
             ))}
           </div>
