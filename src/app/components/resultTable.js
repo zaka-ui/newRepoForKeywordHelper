@@ -76,8 +76,9 @@ const ResultsTable = ({ results, totalKeywords, level }) => {
                 </td>
                 <td className="px-6 py-4 text-center">
                   <span className={`px-3 py-1 rounded-full
-                                ${ keywordDifficulty >= 50 ? 'bg-red-500/20 text-red-400' :  keywordDifficulty < 30 && keywordDifficulty > 15 ?  'bg-amber-500/20 text-amber-400' : 'bg-green-500/20 text-green-400' }
+                     ${keywordDifficulty >= 40 ? 'bg-red-500/20 text-red-400' : keywordDifficulty < 30 && keywordDifficulty > 15 ? 'bg-amber-500/20 text-amber-400' : 'bg-green-500/20 text-green-400' }
                                 `}>
+                    
                      {keywordDifficulty >= 40 ? 'trés concurentiel' : keywordDifficulty < 30 && keywordDifficulty > 15 ? 'concurentiel' : 'non concurentiel' }
                   </span>
                 </td>
