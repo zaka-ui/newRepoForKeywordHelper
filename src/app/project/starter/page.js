@@ -194,7 +194,7 @@ const fetchKeywordsTextArea = async () => {
           {
             keyword: combinationKeyword,
             location_code: 2250,
-            limit : 50,
+            limit : 20,
           },
         ];
 
